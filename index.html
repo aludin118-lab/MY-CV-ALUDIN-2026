@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Aludin</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f0f2f5}
+
+.container{
+  max-width:950px;
+  margin:20px auto;
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(120deg,#1e3c72,#2a5298);
+  color:#fff;
+  padding:25px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.profile-frame{
+  width:110px;
+  height:110px;
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.profile-frame img{
+  width:100%;height:100%;object-fit:contain;
+}
+
+.header-info h1{font-size:22px}
+.header-info p{font-size:13px;opacity:.9}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:20px;
+}
+
+.card{
+  background:#fafafa;
+  border-radius:10px;
+  padding:15px;
+  border-left:4px solid #2a5298;
+}
+
+.card h2{
+  font-size:15px;
+  margin-bottom:8px;
+  color:#2a5298;
+}
+
+.card p{
+  font-size:13px;
+  margin-bottom:6px;
+}
+
+/* CONTACT */
+.contact{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+
+.btn{
+  padding:6px 10px;
+  font-size:12px;
+  border-radius:6px;
+  text-decoration:none;
+  color:#fff;
+}
+.wa{background:#25D366}
+.email{background:#3498db}
+
+/* TIMELINE STYLE */
+.timeline p{
+  position:relative;
+  padding-left:12px;
+}
+.timeline p::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  color:#2a5298;
+}
+
+/* SKILL BAR */
+.skill{
+  margin-bottom:8px;
+}
+.bar{
+  height:6px;
+  background:#ddd;
+  border-radius:5px;
+  overflow:hidden;
+}
+.fill{
+  height:100%;
+  background:#2a5298;
+}
+
+.footer{
+  text-align:center;
+  padding:10px;
+  font-size:12px;
+  background:#f4f4f4;
+}
+
+@media(max-width:700px){
+  .grid{grid-template-columns:1fr}
+  .header{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="profile-frame">
+      <img src="foto.jpg" alt="Foto">
+    </div>
+    <div class="header-info">
+      <h1>Aludin</h1>
+      <p>S1 Informatika</p>
+      <p>5 Juni 2000</p>
+      <div class="contact">
+        <a href="https://wa.me/6285141568210" target="_blank" class="btn wa">WhatsApp</a>
+        <a href="mailto:alunaludin@gmail.com" class="btn email">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRID CONTENT -->
+  <div class="grid">
+
+    <div class="card">
+      <h2>Alamat</h2>
+      <p>Kp Kandang Sapi</p>
+      <p>Gunungkencana, Lebak - Banten</p>
+    </div>
+
+    <div class="card">
+      <h2>Pendidikan</h2>
+      <p>S1 Informatika</p>
+      <p>STIKOM El Rahma Bogor</p>
+    </div>
+
+    <div class="card timeline">
+      <h2>Pengalaman Kerja</h2>
+      <p>Kepala Gudang - Blackpanda.id (2022-2023)</p>
+    </div>
+
+    <div class="card timeline">
+      <h2>Mengajar</h2>
+      <p>SMP Nur Utami Kencana (2024-2026)</p>
+      <p>SMK Mulya Kencana (2025-2026)</p>
+    </div>
+
+    <div class="card">
+      <h2>Skill</h2>
+      <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Basic AI</p>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Lainnya</h2>
+      <p>Founder CV. Alun Karya Sejahtera</p>
+    </div>
+
+  </div>
+
+  <div class="footer">© 2026 Aludin</div>
+
+</div>
+
+</body>
+</html>
